@@ -49,6 +49,7 @@ body{
   font-weight: 600;
   font-size: 18px;
   color: hsl(292, 42%, 14%);
+  cursor: pointer;
 }
 .answerText{
   text-align: left;
@@ -59,4 +60,42 @@ body{
 .hidden{
   display: none;
 }
+.plusImg, .minusImg{
+  cursor: pointer;
+}
 
+@media screen and (max-width: 500px) {
+  
+  .app {
+    width: 78%;
+    margin: -100px auto 0;
+    padding: 20px; 
+    border-radius: 10px;
+  }
+  .questionBar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+  }
+  .answerText {
+    margin-top: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .questionText{
+    text-align: left;
+    padding-left: 10px;
+    padding-right: 50px;
+    font-size: 17px;
+  }
+  .titleText{
+    font-size: 35px
+  }
+  .starImg{
+    transform: scale(0.6);
+  }
+  .titleText{
+    margin-left: 20px;
+  }
+}
